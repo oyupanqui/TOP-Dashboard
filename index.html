@@ -5,67 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP-Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"></li>
 </head>
 <body>
-
-    <header>
-        <div class="upper-panel">
-            <div class="search-bar">Search bar</div>
-            <div class="user-id">User ID</div>
+    <div class="container">
+        <div class="header">
+            <div class="upper-panel">
+                <div class="search-bar">
+                    <img src="svg/search.svg" alt="Search" height="20px">
+                    <input type="text" class="searcher">
+                </div>
+                <div class="user-id">User ID</div>
+            </div>
+            <div class="lower-panel">
+                <div class="welcome-panel">Welcome</div>
+                <div class="buttons-container">
+                    <ul class="buttons-list">
+                        <li>New</li>
+                        <li>Upload</li>
+                        <li>Share</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="lower-panel">
-            <div class="welcome-panel">Welcome</div>
-            <div class="buttons-container">
-                <ul class="buttons-list">
-                    <li>New</li>
-                    <li>Upload</li>
-                    <li>Share</li>
+
+        <div class="nav">
+            <div class="logo-panel">
+                <div>Image-template</div>
+                <div>Dashboard</div>
+            </div>
+
+            <div class="tools-A-panel">
+                <ul class="tools-A-list">
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Communities</li>
+                </ul>
+            </div>
+
+            <div class="tools-B-panel">
+                <ul class="tools-B-list">
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
                 </ul>
             </div>
         </div>
-    </header>
 
-    <div class="nav">
-        <div class="logo-panel">
-            <div>Image-template</div>
-            <div>Dashboard</div>
-        </div>
-
-        <div class="tools-A-panel">
-            <ul class="tools-A-list">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ul>
-        </div>
-
-        <div class="tools-B-panel">
-            <ul class="tools-B-list">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
+        <div class="dashboard">
+            <div class="projects-container">
+                <p>Projects</p>
+                <div class="projects-panel"></div>
+            </div>
+            <div class="announcements-container">
+                <p>Announcements</p>
+                <div class="announcements-panel"></div>
+            </div>
+            <div class="trending-container">
+                <p>Trending</p>
+                <div class="trending-panel"></div>
+            </div>
         </div>
     </div>
-
-    <div class="dashboard">
-        <div class="projects-container">
-            <p>Projects</p>
-            <div class="projects-panel"></div>
-        </div>
-        <div class="announcements-container">
-            <p>Announcements</p>
-            <div class="announcements-panel"></div>
-        </div>
-        <div class="trending-container">
-            <p>Trending</p>
-            <div class="trending-panel"></div>
-        </div>
-    </div>
-
 
 </body>
 </html>

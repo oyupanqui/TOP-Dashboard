@@ -1,0 +1,39 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+.header {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.upper-panel {
+    display: grid;
+}
+
+.search-bar {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.searcher {
+    width: 50%;
+    background-color: #cbd5e1;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.user-id {
+    grid-area: 1 / 2 / 2 / 3;
+}
