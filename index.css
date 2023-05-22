@@ -219,7 +219,7 @@
     display: grid;
     background-color: #f3e8ff;
     grid-area: 2 / 2 / 4 / 4;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-columns: 3fr 1fr;
 }
 
@@ -227,6 +227,7 @@
     padding: 20px;
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
+    align-content: center;
 }
 
 .projects-container p {
@@ -239,7 +240,7 @@
 
 .projects-panel {
     display: grid;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: repeat(auto);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 1fr;
 }
@@ -304,7 +305,7 @@
 .announcements-panel {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background-color: white;
     margin: 10px;
     padding: 30px;
@@ -323,7 +324,7 @@
     padding: 0
 }
 
-.announcement-line {
+.breaker-line {
     width: 100%;
     height: 1px;
     background-color: gray;
@@ -342,3 +343,28 @@
     margin: 0 0 10px 0;
     padding-left: 10px;
 }
+
+.trending-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: white;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.trend {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.trend img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
