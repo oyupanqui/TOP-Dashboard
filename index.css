@@ -30,10 +30,14 @@
 
 .search-panel img {
     cursor: pointer;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
 }
 
 .search-panel img:active {
-    transform: scale(0.95);
+    transform: scale(1.2);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
 }
 
 .searcher {
@@ -54,10 +58,14 @@
 
 .user-panel img {
     cursor: pointer;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
 }
 
 .user-panel img:active {
-    transform: scale(0.95);
+    transform: scale(1.2);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
 }
 
 .small-icon {
@@ -137,8 +145,8 @@
 }
 
 .buttons-list li:active {
-    transform: scale(1.1);
-    transition-duration: 0.5s;
+    transform: scale(1.2);
+    transition-duration: 0.1s;
     transition-timing-function: ease-out
 }
 
@@ -159,6 +167,7 @@
     align-items: center;
     justify-content: center;
     padding: 5px;
+    margin-top: 15px;
 }
 
 .logo-panel img {
@@ -228,6 +237,8 @@
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     align-content: center;
+    grid-template-rows: auto 1fr;
+    grid-auto-rows: 1fr;
 }
 
 .projects-container p {
@@ -287,6 +298,18 @@
     align-items: flex-end;
     gap: 10px;
     padding: 5px
+}
+
+.content-options img {
+    cursor: pointer;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+.content-options img:active {
+    transform: scale(1.2);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out
 }
 
 .announcements-container {
@@ -366,5 +389,13 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.trend img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
 
